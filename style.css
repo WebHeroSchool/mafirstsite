@@ -126,6 +126,7 @@ body {
 	margin-bottom: 0 0 40px 0;
 	font: bold 68px/92px pt_serif,arial,helvetica,sans-serif;
 	width: 35%;
+	margin-bottom: 0;
 }
 .main-content__subtitle{
 	margin-top: 0 0 41px 0;
@@ -133,6 +134,8 @@ body {
 	margin-bottom: 41;
 	font: 23px/19px Roboto,arial,helvetica,sans-serif;
 	width: 32%;
+	line-height: 22px;
+	margin-bottom: 41px;
 }
 .main{
 	padding-top: 100px;
@@ -145,7 +148,7 @@ body {
 	//height: 190px;
 	font: 700 66px/87px pt_serif,arial,helvetica,sans-serif;
 }
-.main__subtitle{
+.main__subtitle {
 	margin: 0 0 52px 0;
 	width: 455px;
 	height: 43px;
