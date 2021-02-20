@@ -125,7 +125,7 @@ body {
 .main-content__title{
 	margin-bottom: 0 0 40px 0;
 	font: bold 68px/92px pt_serif,arial,helvetica,sans-serif;
-	width: 35%;
+	width: ;
 	margin-bottom: 0;
 }
 .main-content__subtitle{
@@ -145,7 +145,7 @@ body {
 	margin: 0 0 29px 0;
 	padding-top: 42px;
 	width: 567px;
-	//height: 190px;
+	height: 190px;
 	font: 700 66px/87px pt_serif,arial,helvetica,sans-serif;
 }
 .main__subtitle {
@@ -195,8 +195,12 @@ body {
 .menu{
 	display: none;
 }
+.menu-open{
+	display: block;
+}
+
 .header{
-	margin-bottom: 28px;
+	margin-bottom: -137px;
 }
 .main{
 	text-align: center;
@@ -204,14 +208,22 @@ body {
 	background-size: 74%;
 	background-position: top center;
 }
+.main-content__title{
+	padding-top: 250px;
+	font: bold 38px/50px pt_serif,arial,helvetica,sans-serif;
+}
 .main__title{
 	text-align: center;
 	margin-bottom: 44px;
-	font: bold 30px/39px pt_serif,arial,helvetica,sans-serif;
+	font: bold 30px/50px pt_serif,arial,helvetica,sans-serif;
+}
+.main-content__subtitle{
+	font: 20px/20px Roboto,arial,helvetica,sans-serif;
+	width: 97%;
 }
 .main__subtitle{
-	margin-bottom: 25px;
-	font: 500 16px/19px Roboto,arial,helvetica,sans-serif;
+	margin-bottom: 34px;
+	font: 500 37px/54px Roboto,arial,helvetica,sans-serif;
 }
 .main__buttom{
 	font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
