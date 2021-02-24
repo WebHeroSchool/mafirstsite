@@ -192,6 +192,13 @@ body {
 	font-family:
 }
 @media(max-width: 768px) {
+.label{
+	background: no-repeat 100% url('img/burger.svg');
+	position: absolute;
+	top: 38px;
+	right: 33px;
+	padding: 15px;
+}
 .menu{
 	display: none;
 }
