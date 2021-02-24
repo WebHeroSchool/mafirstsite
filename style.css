@@ -216,6 +216,7 @@ body {
 	background-position: top center;
 }
 .main-content__title{
+	text-align: center;
 	padding-top: 250px;
 	font: bold 38px/50px pt_serif,arial,helvetica,sans-serif;
 }
@@ -225,6 +226,7 @@ body {
 	font: bold 30px/50px pt_serif,arial,helvetica,sans-serif;
 }
 .main-content__subtitle{
+	text-align: center;
 	font: 20px/20px Roboto,arial,helvetica,sans-serif;
 	width: 97%;
 }
@@ -235,4 +237,32 @@ body {
 .main__buttom{
 	font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
 }
+}
+#burger:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+}
+
+#burger:checked ~ .menu {
+	position: absolute;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100vh;
+	width: 100%;
+}
+
+#burger:checked ~ .label {
+	transition: ease .3s;
+	z-index: 2;
+}
+
+input {
+	display: none;
 }
