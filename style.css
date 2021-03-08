@@ -125,7 +125,7 @@ body {
 .main-content__title{
 	margin-bottom: 0 0 40px 0;
 	font: bold 68px/92px pt_serif,arial,helvetica,sans-serif;
-	width: ;
+	width: 35%;
 	margin-bottom: 0;
 }
 .main-content__subtitle{
@@ -191,6 +191,7 @@ body {
 .title{
 	font-family:
 }
+
 @media(max-width: 768px) {
 .label{
 	background: no-repeat 100% url('img/burger.svg');
