@@ -16,7 +16,7 @@ body {
 	padding: 40px 0;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 13px;
+	margin-bottom: 8.5%;
 }
 .logo..menu{
 	display: inline-block;
@@ -116,17 +116,18 @@ body {
 	background-size: 49em;
 }
 .main-content{
-	padding-top: 129px;
+	padding-top: 1%;
 	background: url('img/Frame.svg');
 	background-repeat: no-repeat;
-	background-position: 98% 122px;
+	background-position: 98% 0px;
 	background-size: contain;
+	padding-bottom: 8%;
 }
 .main-content__title{
 	margin-bottom: 0 0 40px 0;
-	font: bold 68px/92px pt_serif,arial,helvetica,sans-serif;
-	width: 35%;
-	margin-bottom: 0;
+	font: bold 68px/87px pt_serif,arial,helvetica,sans-serif;
+	width: 51%;
+	margin-bottom: 32px;
 }
 .main-content__subtitle{
 	margin-top: 0 0 41px 0;
@@ -134,7 +135,7 @@ body {
 	margin-bottom: 41;
 	font: 23px/19px Roboto,arial,helvetica,sans-serif;
 	width: 32%;
-	line-height: 22px;
+	line-height: 26px;
 	margin-bottom: 41px;
 }
 .main{
@@ -191,7 +192,16 @@ body {
 .title{
 	font-family:
 }
+@media(max-width: 1500px) {
+	.wrapper{
+		width: 68%;
+	}
 
+	.main-content{
+		
+padding-top: 0;
+	}
+}
 @media(max-width: 768px) {
 .label{
 	background: no-repeat 100% url('img/burger.svg');
