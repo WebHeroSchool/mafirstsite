@@ -13,10 +13,10 @@ body {
 }
 
 .header {
-	padding: 40px 0px;
+	padding: 24px 8px;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 8.5%;
+	margin-bottom: 0.5%;
 }
 /*.logo, .menu{
 	display: inline-block;
@@ -25,7 +25,7 @@ body {
 	font: bold 27px/31px pt_serif, arial, helvetica, sans-serif;
 	font-weight: bold;
 	width: 190px;
-	height: 35px;
+	height: 34px;
 	background: url('img/logo.svg');
 	position: relative;
 	border: 1px red;
@@ -51,18 +51,17 @@ body {
 .menu{
 	display: flex;
 	align-items: center;
-.class: not(:last-child);
 }
 .menu__item{
 	position: relative;
-	margin: 0px 21px;
+	margin: 0px 14px;
 	font: 500 16px/7px Roboto,arial,helvetica,sans-serif;
 	color: #000;
 	text-decoration: none;
 	transition: opacity .5s;
 }
 .menu__item:last-child{
-	margin-right: -56px;
+	/* margin-right: -56px; */
 }
 .menu__item_active::after{
 	display: block;
@@ -185,6 +184,7 @@ padding-top: 0;
 	.main-content{
 		background-position: 100% 0;
 	}
+
 }
 @media(max-width: 1290px) {
 	.logo{
@@ -193,7 +193,7 @@ padding-top: 0;
 	.wrapper{
 		width: 91%;
 	}
-	.menu__item{font-size: 14px;line-height: 15px;}
+	.menu__item{font-size: 14px;line-height: 14px;}
 
 	.main-content{
 		
@@ -212,12 +212,19 @@ padding-top: 0px;
 	}
 	.main__button{
 		font-size: 14px;
-		line-height: 11px;
+		line-height: 12px;
 		padding: 12px 20px;
 	}
 	.main-content{
 		background-position: 100% 0;
 	}
+	.menu__item{
+  margin: 0px 14px;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0px;
+  } 
 
 
 }
@@ -225,8 +232,8 @@ padding-top: 0px;
 .label{
 	background: no-repeat 100% url('img/burger.svg');
 	position: absolute;
-	top: 38px;
-	right: 33px;
+	top: 25px;
+	right: 24px;
 	padding: 15px;
 }
 .menu{
@@ -265,11 +272,54 @@ padding-top: 0px;
 	font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
 }
 }
+@media(max-width: 375px) {
+	.logo{
+		width: 190px;
+	}
+	.wrapper{
+		width: 91%;
+	}
+	.main{
+		text-align: center;
+	}
+	.menu__item{font-size: 14px;line-height: 14px;}
+
+	.main-content{
+		
+padding-top: 43px;
+	}
+	.main-content__title{
+		font-size: 21px;
+		line-height: 41px;
+		padding-top: 59%;
+		margin-bottom: 0%;
+		text-align: center;
+	}
+	.main__title{
+	text-align: center;
+	margin-bottom: 44px;
+	font: bold 30px/50px pt_serif,arial,helvetica,sans-serif;
+	}
+	.main-content__subtitle{
+		font-size: 17px;
+		line-height: 17px;
+		width: 86%;
+		text-align: center;
+	}
+	.main__button{
+		font-size: 14px;
+		line-height: 12px;
+		padding: 12px 20px;
+	}
+	.main-content{
+		background-position: 100% 0px;
+	}
 #burger:checked ~ .menu {
     display: flex;
     flex-direction: column;
     height: 50vh;
     width: 100%;
+}
 }
 
 #burger:checked ~ .menu {
