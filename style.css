@@ -1,11 +1,14 @@
 .title {font-family: Roboto}
 body {
 	margin: 0px;
+	/* overflow-y: hidden; */
+	height: 100vh;
 }
 
 .main-section {
 	margin: auto;
 	/* width: 80px; */
+	/* display: none; */
 }
 .wrapper {
 	margin: auto;
@@ -17,6 +20,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 0.5%;
+	/* display: none; */
 }
 /*.logo, .menu{
 	display: inline-block;
@@ -193,6 +197,9 @@ padding-top: 0;
 	}
 	.wrapper{
 		width: 91%;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		/* display: none; */
 	}
 	.menu__item{font-size: 14px;line-height: 14px;}
 
@@ -232,7 +239,7 @@ padding-top: 0px;
 @media(max-width: 768px) {
 .label{
 	background: no-repeat 100% url('img/burger.svg');
-	position: absolute;
+	position: fixed;
 	top: 25px;
 	right: 24px;
 	padding: 15px;
@@ -250,9 +257,10 @@ padding-top: 0px;
 	background-size: 74%;
 	background-position: top center;
 }
+.menu__item{font-size: 32px;line-height: 60px;/* width: 69px; *//* height: 3px; */top: 126px;/* left: -56px; */right: 55px;top: 78px;/* margin: 0 auto 0 auto; */}
 .main-content__title{
 	text-align: center;
-	padding-top: 250px;
+	padding-top: 450px;
 	font: bold 38px/50px pt_serif,arial,helvetica,sans-serif;
 }
 .main__title{
@@ -272,6 +280,44 @@ padding-top: 0px;
 .main__buttom{
 	font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
 }
+#burger:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+#burger:checked ~ .menu {
+	
+background-color: #fff;
+	
+z-index: 100;
+	
+display: flex;
+	
+flex-direction: column;
+	
+/* justify-content: center; */
+	
+width: 100%;
+	
+padding-top: 73px;
+	
+padding-left: 37px;
+}
+
+#burger:checked ~ .label {
+	transition: ease .3s;
+	z-index: 101;
+	background: url('./img/krestik.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+}
+
+input {
+	display: none;
+
 }
 @media(max-width: 375px) {
 	.logo{
@@ -321,41 +367,4 @@ padding-top: 40px;
 		background-position: 100% 0%;
 		text-align: center;
 	}
-#burger:checked ~ .menu {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-}
-}
-
-#burger:checked ~ .menu {
-	
-background-color: #fff;
-	
-z-index: 100;
-	
-display: flex;
-	
-flex-direction: column;
-	
-/* justify-content: center; */
-	
-width: 100%;
-	
-padding-top: 73px;
-	
-padding-left: 37px;
-}
-
-#burger:checked ~ .label {
-	transition: ease .3s;
-	z-index: 101;
-	background: url('./img/krestik.svg');
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-input {
-	display: none;
 }
