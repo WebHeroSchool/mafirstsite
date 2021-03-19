@@ -5,7 +5,7 @@ body {
 
 .main-section {
 	margin: auto;
-	width: 80;
+	/* width: 80px; */
 }
 .wrapper {
 	margin: auto;
@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-	padding: 24px 8px;
+	padding: 23px 0px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 0.5%;
@@ -283,16 +283,16 @@ padding-top: 0px;
 		text-align: center;
 		background-position: top center;
 	}
-	.menu__item{font-size: 14px;line-height: 14px;}
+	.menu__item{font-size: 32px;line-height: 133px;width: 69px;height: 3px;top: 126px;/* left: -56px; */right: 55px;top: 78px;}
 
 	.main-content{
 		
 padding-top: 40px;
 	}
 	.main-content__title{
-		font-size: 30px;
+		font-size: 31px;
 		line-height: 36px;
-		padding-top: 60%;
+		padding-top: 66%;
 		margin-bottom: 0%;
 		width: 102%;
 		text-align: center;
@@ -323,22 +323,20 @@ padding-top: 40px;
 #burger:checked ~ .menu {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
 }
 }
 
 #burger:checked ~ .menu {
-	position: absolute;
-	background-color: #fff;
-	top: -1215px;
-	left: 1284px;
-	z-index: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	height: 667px;
-	width: 375px;
+	background-color: #fff;
+	top: -1228px;
+	left: 1199px;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
 }
 
 #burger:checked ~ .label {
