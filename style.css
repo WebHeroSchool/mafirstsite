@@ -368,3 +368,9 @@ padding-top: 40px;
 		text-align: center;
 	}
 }
+@keyframes flash{
+}
+.main__button{
+	font-size: 14px;
+	animation: flash .3s aese-in-out;
+}
