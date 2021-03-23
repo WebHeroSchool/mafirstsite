@@ -1,14 +1,11 @@
 .title {font-family: Roboto}
 body {
 	margin: 0px;
-	/* overflow-y: hidden; */
 	height: 100vh;
 }
 
 .main-section {
 	margin: auto;
-	/* width: 80px; */
-	/* display: none; */
 }
 .wrapper {
 	margin: auto;
@@ -20,11 +17,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 0.5%;
-	/* display: none; */
 }
-/*.logo, .menu{
-	display: inline-block;
-}*/
+
 .logo {
 	font: bold 27px/31px pt_serif, arial, helvetica, sans-serif;
 	font-weight: bold;
@@ -64,9 +58,7 @@ body {
 	text-decoration: none;
 	transition: opacity .5s;
 }
-.menu__item:last-child{
-	/* margin-right: -56px; */
-}
+
 .menu__item_active::after{
 	display: block;
 	content:'';
@@ -199,7 +191,6 @@ padding-top: 0;
 		width: 91%;
 		overflow-y: hidden;
 		overflow-x: hidden;
-		/* display: none; */
 	}
 	.menu__item{font-size: 14px;line-height: 14px;}
 
@@ -229,12 +220,6 @@ padding-top: 0px;
 	.menu__item{
   margin: 0px 14px;
   }
-
-  .menu__item:last-child {
-    /* margin-right: 0px; */
-  } 
-
-
 }
 @media(max-width: 768px) {
 .label{
@@ -257,7 +242,7 @@ padding-top: 0px;
 	background-size: 74%;
 	background-position: top center;
 }
-.menu__item{font-size: 32px;line-height: 60px;/* width: 69px; *//* height: 3px; */top: 126px;/* left: -56px; */right: 55px;top: 78px;/* margin: 0 auto 0 auto; */}
+.menu__item{font-size: 32px;line-height: 60px;top: 126px;/* left: -56px; */right: 55px;top: 78px;/* margin: 0 auto 0 auto; */}
 .main-content__title{
 	text-align: center;
 	padding-top: 450px;
@@ -297,7 +282,7 @@ display: flex;
 	
 flex-direction: column;
 	
-/* justify-content: center; */
+
 	
 width: 100%;
 	
@@ -330,7 +315,7 @@ input {
 		text-align: center;
 		background-position: top center;
 	}
-	.menu__item{font-size: 32px;line-height: 60px;/* width: 69px; *//* height: 3px; */top: 126px;/* left: -56px; */right: 55px;top: 78px;/* margin: 0 auto 0 auto; */}
+	.menu__item{font-size: 32px;line-height: 60px;top: 126px;/* left: -56px; */right: 55px;top: 78px;/* margin: 0 auto 0 auto; */}
 
 	.main-content{
 		
@@ -370,7 +355,7 @@ padding-top: 40px;
 }
 @keyframes flash{
 }
-.main__button{
-	font-size: 14px;
-	animation: flash .3s aese-in-out;
+	.main__button{
+		font-size: 14px;
+		animation: flash .3s aese-in-out;
 }
